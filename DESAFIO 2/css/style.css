@@ -1,0 +1,49 @@
+.bg-gray{ background: #eee; }
+.bg-black{ background: #000; }
+.boxTotalIngresos
+{
+	padding: 10px 0px 5px 0px;
+	border-radius: 5px;
+}
+.boxTotalIngresos2
+{
+	padding: 10px 0px 5px 0px;
+	border-radius: 5px;
+	border: 2px solid #f2f2f2;
+}
+.porcentajeGastos
+{
+	padding: 2px 12px 3px 12px;
+	border-radius: 5px;
+}
+.primeraColumna
+{
+	border-right: 1px solid #999;
+}
+.monto, .descripcion, .ingresoEgreso
+{
+	padding: 5px 0px 5px 5px;
+	border-radius: 5px;
+	border: 1px solid #999;
+	margin: 15px auto 15px auto;
+}
+
+.monto:focus, .descripcion:focus, .ingresoEgreso:focus
+{
+	outline: none;
+}
+.salarios
+{
+	padding: 5px 0px 5px 15px;
+	border: 1px solid #999;
+}
+.button
+{
+	width: 49%;
+	height: 50px;
+}
+.distancia
+{
+	float: right;
+	margin-right: 30px;
+}

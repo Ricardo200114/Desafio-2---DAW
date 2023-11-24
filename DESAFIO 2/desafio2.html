@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Presupuesto Mensual</title>
+    <link rel="icon" type="image/x-icon" href="img/logo1.png" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container-fluid bg-gray">
+      <div class="row justify-content-center">
+        <div class="col-12 text-center mt-5">
+          <h2 class="font-weight-bold">Presupuesto mes de Abril</h2>
+          <h2 class="font-weight-bold" id="date">Abril 2022</h2>
+        </div>
+        <div class="col-12 text-center mt-4">
+          <h2>
+            <span id="simbolo">+</span>
+            <span id="presupuesto">Presupuesto</span>
+          </h2>
+        </div>
+        <div
+          class="col-7 col-sm-5 col-md-4 col-lg-3 col-xl-2 mt-3 boxTotalIngresos bg-black"
+        >
+          <h6 class="text-center text-light">
+            INGRESOS: + <span id="totalIngresos">Total de ingresos</span>
+          </h6>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div
+          class="col-7 col-sm-5 col-md-4 col-lg-3 col-xl-2 mt-3 boxTotalIngresos2 bg-white"
+        >
+          <h6 class="text-center text-dark font-weight-bold">
+            EGRESOS: <span id="simboloEgreso">-</span>
+            <span id="totalEgresos">Total de egresos</span>
+          </h6>
+        </div>
+      </div>
+      <div class="row justify-content-center mt-4">
+        <div class="col-12 mb-4">
+          <h6 class="text-center">
+            Porcentaje de gatos:
+            <span
+              id="porcentajeTotalGastos"
+              class="ml-1 bg-black text-light porcentajeGastos"
+              >x</span
+            >
+            %
+          </h6>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-6 primeraColumna mb-3">
+          <h3 class="mt-4 text-center">Transacción</h3>
+          <select
+            class="p-2 ingresoEngreso ingresoEgreso d-block"
+            required
+            id="ingresoEgreso"
+          >
+            <option value="ingreso" id="ingreso">Ingresos</option>
+            <option value="egreso" id="egreso">Egresos</option>
+          </select>
+          <input
+            class="d-block descripcion w-50"
+            id="descripcion"
+            required=""
+            placeholder="Descripcion"
+            name="hola"
+            type="text"
+            value="Descripción"
+          />
+          <input
+            class="d-block monto w-50"
+            id="monto"
+            required=""
+            placeholder="Monto"
+            type="text"
+            name="hola"
+            value="Monto"
+          />
+          <button id="buttonAgregar" class="btn btn-dark m-auto d-block w-50">
+            Agregar
+          </button>
+        </div>
+        <div class="col-6 mt-4 mb-3 d-inline" id="contenedor">
+          <button type="button" id="buttonIngreso" class="btn btn-dark button">
+            INGRESOS
+          </button>
+          <button type="button" id="buttonEgreso" class="btn btn-light button">
+            EGRESOS
+          </button>
+          <div class="mb-4"></div>
+        </div>
+      </div>
+    </div>
+    <script src="js/elJavaScript.js"></script>
+  </body>
+</html>
